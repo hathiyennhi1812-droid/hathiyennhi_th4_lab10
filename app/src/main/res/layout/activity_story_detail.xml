@@ -1,57 +1,16 @@
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:padding="16dp"
+
+    <include layout="@layout/actionbar_story_detail" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpStory"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent" />
 
-        <LinearLayout
-            android:orientation="horizontal"
-            android:background="#4CAF50"
-            android:padding="10dp"
-            android:gravity="center_vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/btnBack"
-                android:src="@drawable/ic_back"
-                android:tint="@android:color/white"
-                android:layout_width="30dp"
-                android:layout_height="30dp" />
-
-            <TextView
-                android:id="@+id/tvChuDe"
-                android:text="Con gái"
-                android:textColor="@android:color/white"
-                android:textSize="20sp"
-                android:layout_marginStart="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
-
-
-        <TextView
-            android:id="@+id/tvTenTruyen"
-            android:text="Việc học"
-            android:textStyle="bold"
-            android:textColor="#4CAF50"
-            android:textSize="20sp"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
-
-        <TextView
-            android:id="@+id/tvNoiDung"
-            android:textSize="17sp"
-            android:textColor="#333"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>
